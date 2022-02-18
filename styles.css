@@ -9,6 +9,7 @@ a {
 }
 body {
   background-color: #caf0f8;
+  font-size: 24px;
 }
 /* Header */
 header {
@@ -62,6 +63,7 @@ main {
   display: flex;
   width: 100%;
 }
+
 main aside {
   position: relative;
   top: 50px;
@@ -80,10 +82,25 @@ aside h2 {
 }
 aside nav a {
   margin: 10px;
-  font-size: 24px;
 }
+main section {
+  width: calc(90% - 300px);
+}
+main section .about {
+  padding: 25px;
+}
+main section .gallery {
+  display: grid;
+}
+.gallery div {
+  display: block;
+  width: 300px;
+  height: 150px;
+  background-color: aliceblue;
+}
+main section
 /* Footer*/
 footer {
   position: relative;
-  top: 100px;
+  top: 200px;
 }
