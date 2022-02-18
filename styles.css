@@ -62,30 +62,6 @@ main aside {
   position: relative;
   top: 50px;
   width: calc(10% + 300px);
-  display: grid;
-  grid-template-areas:
-    "Contact"
-    "Address-icon Address-data"
-    "Mail-icon Mail-data"
-    "Phone-icon Phone-data";
-}
-.contact {
-  grid-area: Contact;
-}
-.address-icon {
-  grid-area: Address-icon;
-}
-.address-data {
-  grid-area: Address-data;
-}
-.mail-icon {
-  grid-area: Mail-icon;
-}
-.mail-data {
-  grid-area: Mail-data;
-}
-main section {
-  width: calc(90% - 300px);
 }
 /* Footer*/
 footer {
