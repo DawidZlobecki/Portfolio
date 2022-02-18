@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: 03045e;
+}
+body {
+  background-color: #caf0f8;
+}
+/* Header */
+header {
+  position: relative;
+  top: 50px;
+  height: 200px;
+  width: 100%;
+  background-color: #00b4d8;
+  border-top: 4px solid #90e0ef;
+  border-bottom: 4px solid #90e0ef;
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  align-self: flex-end;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 5%;
+  top: -50px;
+}
+.logo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #90e0ef;
+  margin-right: 25px;
+}
+.logo h1 {
+  align-self: center;
+  position: relative;
+  top: 50px;
+}
+header nav {
+  width: 20%;
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav a {
+  color: black;
+  font-size: 32px;
+}
+
+/* Main */
+main {
+  position: relative;
+  top: 50px;
+  display: flex;
+  width: 100%;
+}
+main aside {
+  position: relative;
+  top: 50px;
+  width: calc(10% + 300px);
+  display: grid;
+  grid-template-areas:
+    "Contact"
+    "Address-icon Address-data"
+    "Mail-icon Mail-data"
+    "Phone-icon Phone-data";
+}
+.contact {
+  grid-area: Contact;
+}
+.address-icon {
+  grid-area: Address-icon;
+}
+.address-data {
+  grid-area: Address-data;
+}
+.mail-icon {
+  grid-area: Mail-icon;
+}
+.mail-data {
+  grid-area: Mail-data;
+}
+main section {
+  width: calc(90% - 300px);
+}
+/* Footer*/
+footer {
+  position: relative;
+  top: 100px;
+}
