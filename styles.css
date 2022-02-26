@@ -44,27 +44,22 @@ header .nav {
 /*main*/
 main {
 }
+/* main - about */
 main .about {
   display: flex;
   margin-top: 50px;
   align-items: center;
-}
-main .about .sign {
-  width: 70%;
-  box-sizing: border-box;
+  justify-content: space-around;
 }
 main .about img {
   width: 300px;
   height: 200px;
-  margin: 0 100px 0 100px;
 }
 main .about .sign {
-  position: relative;
-}
-main .about .sign > article {
+  width: 70%;
   box-sizing: border-box;
+  position: relative;
   background-color: #f7ecde;
-  margin-right: 100px;
   padding: 50px;
   border: 4px solid #e9dac1;
 }
@@ -72,17 +67,17 @@ main .about .sign .left-smaller-ball {
   width: 50px;
   height: 50px;
   position: absolute;
-  left: 0;
-  top: 0;
   background-color: #fbf8f1;
   border-bottom-right-radius: 100%;
+  left: -4px;
+  top: -4px;
 }
 main .about .sign .left-bigger-ball {
   width: 54px;
   height: 54px;
   position: absolute;
-  left: 0;
-  top: 0;
+  left: -4px;
+  top: -4px;
   background-color: #e9dac1;
   border-bottom-right-radius: 100%;
 }
@@ -90,21 +85,70 @@ main .about .sign .right-smaller-ball {
   width: 50px;
   height: 50px;
   position: absolute;
-  left: 0;
-  top: 0;
   background-color: #fbf8f1;
-  border-bottom-right-radius: 100%;
+  border-top-left-radius: 100%;
+  right: -4px;
+  bottom: -4px;
 }
 main .about .sign .right-bigger-ball {
   width: 54px;
   height: 54px;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: -4px;
+  bottom: -4px;
   background-color: #e9dac1;
+  border-top-left-radius: 100%;
+}
+/* main technologies */
+main .technologies {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .technologies .technologies-sign {
+  margin-top: 50px;
+  width: 80%;
+  position: relative;
+  height: 100vh;
+  background-color: #f7ecde;
+  border: 4px solid #e9dac1;
+}
+main .technologies .technologies-sign .left-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  left: -4px;
+  top: -4px;
   border-bottom-right-radius: 100%;
 }
-main .technologies {
+main .technologies .technologies-sign .left-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  left: -4px;
+  top: -4px;
+  border-bottom-right-radius: 100%;
+}
+main .technologies .technologies-sign .right-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  right: -4px;
+  top: -4px;
+  border-bottom-left-radius: 100%;
+}
+main .technologies .technologies-sign .right-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  right: -4px;
+  top: -4px;
+  border-bottom-left-radius: 100%;
 }
 main .projects {
 }
