@@ -99,6 +99,16 @@ main .about .sign .right-bigger-ball {
   background-color: #e9dac1;
   border-top-left-radius: 100%;
 }
+.small-ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /* background-color: #fbf8f1; */
+  background-color: #e9dac1;
+  right: 14px;
+  top: 14px;
+  border-radius: 100%;
+}
 /* main technologies */
 main .technologies {
   margin-top: 50px;
@@ -110,11 +120,10 @@ main .technologies .technologies-sign {
   margin-top: 50px;
   width: 80%;
   position: relative;
-  height: 100vh;
   background-color: #f7ecde;
   border: 4px solid #e9dac1;
 }
-main .technologies .technologies-sign .left-bigger-ball {
+main .technologies .technologies-sign .left-top-bigger-ball {
   position: absolute;
   width: 79px;
   height: 79px;
@@ -123,7 +132,7 @@ main .technologies .technologies-sign .left-bigger-ball {
   top: -4px;
   border-bottom-right-radius: 100%;
 }
-main .technologies .technologies-sign .left-smaller-ball {
+main .technologies .technologies-sign .left-top-smaller-ball {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -132,7 +141,7 @@ main .technologies .technologies-sign .left-smaller-ball {
   top: -4px;
   border-bottom-right-radius: 100%;
 }
-main .technologies .technologies-sign .right-bigger-ball {
+main .technologies .technologies-sign .right-top-bigger-ball {
   position: absolute;
   width: 79px;
   height: 79px;
@@ -141,7 +150,7 @@ main .technologies .technologies-sign .right-bigger-ball {
   top: -4px;
   border-bottom-left-radius: 100%;
 }
-main .technologies .technologies-sign .right-smaller-ball {
+main .technologies .technologies-sign .right-top-smaller-ball {
   position: absolute;
   width: 75px;
   height: 75px;
@@ -150,5 +159,64 @@ main .technologies .technologies-sign .right-smaller-ball {
   top: -4px;
   border-bottom-left-radius: 100%;
 }
+main .technologies .technologies-sign .left-bottom-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  left: -4px;
+  bottom: -4px;
+  border-top-right-radius: 100%;
+}
+main .technologies .technologies-sign .left-bottom-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  left: -4px;
+  bottom: -4px;
+  border-top-right-radius: 100%;
+}
+main .technologies .technologies-sign .right-bottom-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  right: -4px;
+  bottom: -4px;
+  border-top-left-radius: 100%;
+}
+main .technologies .technologies-sign .right-bottom-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  right: -4px;
+  bottom: -4px;
+  border-top-left-radius: 100%;
+}
+main .technologies .technologies-sign .grid {
+  padding: 75px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 75px;
+  justify-content: center;
+}
+main .technologies .technologies-sign .grid .grid-element {
+  height: 250px;
+  width: 250px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20%;
+  border: 4px solid #e9dac1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .technologies .technologies-sign .grid .grid-element img {
+  height: 150px;
+  width: 150px;
+}
+/*project list*/
 main .projects {
 }
