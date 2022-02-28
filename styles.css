@@ -42,8 +42,6 @@ header .nav {
   font-size: 36px;
 }
 /*main*/
-main {
-}
 /* main - about */
 main .about {
   display: flex;
@@ -103,11 +101,99 @@ main .about .sign .right-bigger-ball {
   position: absolute;
   width: 20px;
   height: 20px;
-  /* background-color: #fbf8f1; */
   background-color: #e9dac1;
   right: 14px;
   top: 14px;
   border-radius: 100%;
+}
+/*sign for technologies and projects*/
+main .technologies .technologies-sign,
+main .projects .projects-sign {
+  margin-top: 50px;
+  width: 80%;
+  position: relative;
+  background-color: #f7ecde;
+  border: 4px solid #e9dac1;
+}
+main .technologies .technologies-sign .left-top-bigger-ball,
+main .projects .projects-sign .left-top-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  left: -4px;
+  top: -4px;
+  border-bottom-right-radius: 100%;
+}
+main .technologies .technologies-sign .left-top-smaller-ball,
+main .projects .projects-sign .left-top-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  left: -4px;
+  top: -4px;
+  border-bottom-right-radius: 100%;
+}
+main .technologies .technologies-sign .right-top-bigger-ball,
+main .projects .projects-sign .right-top-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  right: -4px;
+  top: -4px;
+  border-bottom-left-radius: 100%;
+}
+main .technologies .technologies-sign .right-top-smaller-ball,
+main .projects .projects-sign .right-top-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  right: -4px;
+  top: -4px;
+  border-bottom-left-radius: 100%;
+}
+main .technologies .technologies-sign .left-bottom-bigger-ball,
+main .projects .projects-sign .left-bottom-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  left: -4px;
+  bottom: -4px;
+  border-top-right-radius: 100%;
+}
+main .technologies .technologies-sign .left-bottom-smaller-ball,
+main .projects .projects-sign .left-bottom-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  left: -4px;
+  bottom: -4px;
+  border-top-right-radius: 100%;
+}
+main .technologies .technologies-sign .right-bottom-bigger-ball,
+main .projects .projects-sign .right-bottom-bigger-ball {
+  position: absolute;
+  width: 79px;
+  height: 79px;
+  background-color: #e9dac1;
+  right: -4px;
+  bottom: -4px;
+  border-top-left-radius: 100%;
+}
+main .technologies .technologies-sign .right-bottom-smaller-ball,
+main .projects .projects-sign .right-bottom-smaller-ball {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-color: #fbf8f1;
+  right: -4px;
+  bottom: -4px;
+  border-top-left-radius: 100%;
 }
 /* main technologies */
 main .technologies {
@@ -116,85 +202,7 @@ main .technologies {
   flex-direction: column;
   align-items: center;
 }
-main .technologies .technologies-sign {
-  margin-top: 50px;
-  width: 80%;
-  position: relative;
-  background-color: #f7ecde;
-  border: 4px solid #e9dac1;
-}
-main .technologies .technologies-sign .left-top-bigger-ball {
-  position: absolute;
-  width: 79px;
-  height: 79px;
-  background-color: #e9dac1;
-  left: -4px;
-  top: -4px;
-  border-bottom-right-radius: 100%;
-}
-main .technologies .technologies-sign .left-top-smaller-ball {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: #fbf8f1;
-  left: -4px;
-  top: -4px;
-  border-bottom-right-radius: 100%;
-}
-main .technologies .technologies-sign .right-top-bigger-ball {
-  position: absolute;
-  width: 79px;
-  height: 79px;
-  background-color: #e9dac1;
-  right: -4px;
-  top: -4px;
-  border-bottom-left-radius: 100%;
-}
-main .technologies .technologies-sign .right-top-smaller-ball {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: #fbf8f1;
-  right: -4px;
-  top: -4px;
-  border-bottom-left-radius: 100%;
-}
-main .technologies .technologies-sign .left-bottom-bigger-ball {
-  position: absolute;
-  width: 79px;
-  height: 79px;
-  background-color: #e9dac1;
-  left: -4px;
-  bottom: -4px;
-  border-top-right-radius: 100%;
-}
-main .technologies .technologies-sign .left-bottom-smaller-ball {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: #fbf8f1;
-  left: -4px;
-  bottom: -4px;
-  border-top-right-radius: 100%;
-}
-main .technologies .technologies-sign .right-bottom-bigger-ball {
-  position: absolute;
-  width: 79px;
-  height: 79px;
-  background-color: #e9dac1;
-  right: -4px;
-  bottom: -4px;
-  border-top-left-radius: 100%;
-}
-main .technologies .technologies-sign .right-bottom-smaller-ball {
-  position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: #fbf8f1;
-  right: -4px;
-  bottom: -4px;
-  border-top-left-radius: 100%;
-}
+
 main .technologies .technologies-sign .grid {
   padding: 75px 100px;
   display: grid;
@@ -219,4 +227,78 @@ main .technologies .technologies-sign .grid .grid-element img {
 }
 /*project list*/
 main .projects {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .projects .projects-sign .grid {
+  padding: 75px 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-gap: 75px;
+  justify-content: center;
+}
+main .projects .projects-sign .grid .grid-element {
+  border-radius: 5%;
+  border: 4px solid #e9dac1;
+  overflow: hidden;
+  height: 250px;
+  width: 400px;
+  position: relative;
+}
+main .projects .projects-sign .grid .grid-element:hover ~ :first-child {
+  background-color: white;
+  width: 400px;
+  height: 250px;
+}
+main .projects .projects-sign .grid .grid-element a h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: yellowgreen;
+  text-align: center;
+}
+/*footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+footer .border {
+  width: 80%;
+  height: 20px;
+  background-color: #f7ecde;
+  border-radius: 30px;
+  border: 4px solid #e9dac1;
+  position: absolute;
+  top: -14px;
+}
+footer .content {
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 4px solid #e9dac1;
+  background-color: #f7ecde;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+footer .content .content-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+footer .content .content-container .photo {
+  width: 300px;
+  height: 300px;
+  background-color: #54bab9;
+  border-radius: 50%;
+}
+footer .content .content-container div {
+  display: flex;
+  flex-direction: column;
 }
