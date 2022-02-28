@@ -9,7 +9,12 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.photo{
+  background-image: url("./img/profil/profil300.png");
+}
 /* header */
+
 header .space {
   height: 50px;
 }
@@ -41,8 +46,11 @@ header .nav {
   padding-right: 50px;
   font-size: 36px;
 }
+
 /*main*/
+
 /* main - about */
+
 main .about {
   display: flex;
   margin-top: 50px;
@@ -106,7 +114,9 @@ main .about .sign .right-bigger-ball {
   top: 14px;
   border-radius: 100%;
 }
+
 /*sign for technologies and projects*/
+
 main .technologies .technologies-sign,
 main .projects .projects-sign {
   margin-top: 50px;
@@ -195,7 +205,9 @@ main .projects .projects-sign .right-bottom-smaller-ball {
   bottom: -4px;
   border-top-left-radius: 100%;
 }
+
 /* main technologies */
+
 main .technologies {
   margin-top: 50px;
   display: flex;
@@ -225,7 +237,9 @@ main .technologies .technologies-sign .grid .grid-element img {
   height: 150px;
   width: 150px;
 }
+
 /*project list*/
+
 main .projects {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -248,20 +262,59 @@ main .projects .projects-sign .grid .grid-element {
   width: 400px;
   position: relative;
 }
-main .projects .projects-sign .grid .grid-element:hover ~ :first-child {
+main .projects .projects-sign .grid .grid-element:hover {
+  transform: scale(1.1);
+  transition: 200ms linear;
+}
+main .projects .projects-sign .grid .grid-element div {
+  position: absolute;
   background-color: white;
-  width: 400px;
-  height: 250px;
+  right: -5%;
+  bottom: -5%;
+  border-radius: 50%;
+}
+main .projects .projects-sign .grid .grid-element:hover h3 {
+  animation: showText 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes showText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main .projects .projects-sign .grid .grid-element:hover div {
+  animation: coverWithWhite 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes coverWithWhite {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 400px;
+    height: 400px;
+    transform: scale(2.8);
+    opacity: 75%;
+  }
 }
 main .projects .projects-sign .grid .grid-element a h3 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: yellowgreen;
   text-align: center;
+  opacity: 0;
 }
+
 /*footer*/
+
 footer {
   display: flex;
   flex-direction: column;
@@ -275,7 +328,7 @@ footer .border {
   border-radius: 30px;
   border: 4px solid #e9dac1;
   position: absolute;
-  top: -14px;
+  top: -12px;
 }
 footer .content {
   width: 100%;
@@ -301,4 +354,118 @@ footer .content .content-container .photo {
 footer .content .content-container div {
   display: flex;
   flex-direction: column;
+}
+footer .content .content-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer .content .content-container li {
+  padding: 15px;
+}
+footer .content .content-container i {
+  font-size: 36px;
+}
+footer .content .content-container a {
+  display: flex;
+  align-items: center;
+}
+footer .content .content-container div:not(.photo) {
+  padding: 50px;
+  border-left: 4px solid #e9dac1;
+}
+
+/*media settings*/
+
+@media only screen and (max-width: 1200px) {
+  header .nav {
+    height: 175px;
+  }
+  .logo .photo {
+    width: 250px;
+    height: 250px;
+    background-image: url("./img/profil/profil250.png");
+  }
+  footer .content .content-container .photo {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header .nav {
+    height: 150px;
+  }
+  .logo .photo {
+    width: 200px;
+    height: 200px;
+    background-image: url("./img/profil/profil200.png");
+  }
+  .nav nav a {
+    padding-right: 25px;
+  }
+  main .about {
+    flex-direction: column;
+  }
+  main .about img {
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header .nav {
+    height: 100px;
+  }
+  .logo .photo {
+    display: none;
+  }
+  .nav nav a {
+    font-size: 20px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  main .technologies .technologies-sign,
+  main .projects .projects-sign {
+    width: 90%;
+  }
+  main .projects .projects-sign .grid {
+    grid-gap: 50px;
+  }
+  footer .content .content-container {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .nav nav a {
+    padding-right: 15px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  main .about .sign {
+    width: 95%;
+  }
+  main .technologies .technologies-sign .grid {
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+  main .technologies .technologies-sign .grid .grid-element {
+    height: 200px;
+    width: 200px;
+  }
+  main .technologies .technologies-sign .grid .grid-element img {
+    height: 100px;
+    width: 100px;
+  }
+  main .projects .projects-sign .grid{
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+  main .projects .projects-sign .grid .grid-element {
+    width: 250px;
+    height: 175px;
+  }
+  main .projects .projects-sign .grid .grid-element img {
+    width: 250px;
+    height: 175px;
+  }
+
+  footer .content .content-container div:not(.photo) {
+    padding: 10px;
 }
