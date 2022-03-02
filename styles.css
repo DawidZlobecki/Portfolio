@@ -326,8 +326,6 @@ footer .content .content-container a {
 footer .content .content-container div:not(.mail) {
   border-left: 4px solid #e9dac1;
 }
-footer .content .content-container .mail {
-}
 footer .content .content-container .mail h2 {
   align-self: center;
   margin-bottom: 15px;
@@ -335,7 +333,8 @@ footer .content .content-container .mail h2 {
 footer .content .content-container .mail form {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 600px;
+  box-sizing: border-box;
   background-color: #f7ecde;
   border-radius: 30px;
   border: 4px solid #e9dac1;
@@ -366,10 +365,7 @@ footer .content .content-container .mail form .submit {
   border: 4px solid #e9dac1;
 }
 footer .content .content-container .mail form .submit:hover {
-  align-self: center;
-  width: 80px;
   background-color: #54bab9;
-  border-radius: 30px;
   border: 4px solid #54bab9;
 }
 
@@ -383,6 +379,9 @@ footer .content .content-container .mail form .submit:hover {
     width: 250px;
     height: 250px;
     background-image: url("./img/profil/profil250.png");
+  }
+  footer .content .content-container .mail form {
+    width: 325px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -403,19 +402,21 @@ footer .content .content-container .mail form .submit:hover {
   main .about img {
     padding-bottom: 50px;
   }
+  footer .content .content-container .mail form,
+  footer .content .content-container .mail h2 {
+    display: none;
+  }
 }
 @media only screen and (max-width: 768px) {
   header .nav {
     height: 100px;
   }
-  .logo .photo {
-    display: none;
-  }
   .nav nav a {
     font-size: 20px;
+    padding: 5px;
   }
   header h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
   main .technologies .technologies-sign,
   main .projects .projects-sign {
@@ -432,9 +433,7 @@ footer .content .content-container .mail form .submit:hover {
   .nav nav a {
     padding-right: 15px;
   }
-  header h1 {
-    font-size: 20px;
-  }
+
   main .about .sign {
     width: 95%;
   }
